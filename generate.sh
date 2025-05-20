@@ -10,7 +10,7 @@ OUTPUT_DIR="generated-server"
 #   -i /local/openapi.json -g haskell-yesod -o /local/${OUTPUT_DIR}
 
 # Using locally installed openapi-generator-cli
-openapi-generator-cli generate \
+openapi-generator generate \
   -i openapi.json \
   -g haskell-yesod \
   -o "$OUTPUT_DIR"
