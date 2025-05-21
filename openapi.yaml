@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Hello API
+  version: 1.0.0
+paths:
+  /hello:
+    get:
+      summary: Returns a greeting
+      operationId: getHello
+      responses:
+        '200':
+          description: A greeting
+          content:
+            text/plain:
+              schema:
+                type: string
+

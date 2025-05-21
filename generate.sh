@@ -7,10 +7,10 @@ OUTPUT_DIR="generated-server"
 # Ensure openapi-generator-cli is installed
 # If using Docker, you can uncomment the docker command below
 # docker run --rm -v "$(pwd)":/local openapitools/openapi-generator-cli generate \
-#   -i /local/openapi.json -g haskell-yesod -o /local/${OUTPUT_DIR}
+#   -i /local/openapi.yaml -g haskell-yesod -o /local/${OUTPUT_DIR}
 
 # Using locally installed openapi-generator-cli
 openapi-generator generate \
-  -i openapi.json \
+  -i openapi.yaml \
   -g haskell-yesod \
   -o "$OUTPUT_DIR"
